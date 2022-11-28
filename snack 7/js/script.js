@@ -14,11 +14,11 @@ const shoppingList = [
 
 //indico l'elemento del DOM che voglio andare a modificare
 const ulElement = document.querySelector('ul.list-group');
-let i= -1;
+let i= 0;
 
 //scorro gli elementi della lista fino alla fine
-while (i < 6) {
-    i++;
+while (i < shoppingList.length) {
+    
     //creo un list item
     const newLiElement = document.createElement('li');
 
@@ -31,4 +31,5 @@ while (i < 6) {
     //appendo l'elemento list item alla ul del DOM
     ulElement.append(newLiElement);
 
+    i++;
 };
